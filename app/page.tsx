@@ -9,7 +9,7 @@ export default function Home() {
           Исследуйте вселенную STARWARS!
         </h1>
         <p className={`${styles.home__description}`}>
-          Читайте о фильмах и персонажах используя Next-Swapi
+          Читайте о фильмах, используя Next-Swapi
         </p>
         <div className={`${styles.home__buttons}`}>
           <Button variant="primary" href="/films">

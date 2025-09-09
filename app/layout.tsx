@@ -13,7 +13,7 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "SWAPI App | Изучение вселенной Star Wars",
   description:
-    "Интерактивная энциклопедия по вселенной Star Wars. Изучите фильмы и персонажей с помощью современного Next.js приложения.",
+    "Интерактивная энциклопедия по вселенной Star Wars. Изучите фильмы с помощью современного Next.js приложения.",
 };
 
 export default function RootLayout({
