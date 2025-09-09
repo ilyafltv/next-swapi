@@ -1,0 +1,181 @@
+.filmPage {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.filmPage__header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.filmPage__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #ffe81f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.filmPage__episode {
+  font-size: 1.2rem;
+  color: #999;
+  font-style: italic;
+}
+
+.filmPage__content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.filmPage__poster {
+  position: relative;
+}
+
+.filmPage__image {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.filmPage__image:hover {
+  transform: scale(1.02);
+}
+
+.filmPage__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.filmPage__detail {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.8rem;
+  animation: fadeIn 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.filmPage__label {
+  font-weight: 600;
+  color: #ffe81f;
+  min-width: 220px;
+  margin-right: 1rem;
+}
+
+.filmPage__value {
+  color: #ccc;
+  flex: 1;
+}
+
+.filmPage__intro {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  border-left: 4px solid #ffe81f;
+}
+
+.filmPage__subtitle {
+  font-size: 1.3rem;
+  margin: 0 0 1rem 0;
+  color: #ffe81f;
+}
+
+.filmPage__openingCrawl {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  font-style: italic;
+  white-space: pre-wrap;
+  text-align: justify;
+}
+
+.filmPage__actions {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Анимация */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .filmPage {
+    padding: 1rem;
+  }
+  .filmPage__header {
+    margin-bottom: 2rem;
+  }
+  .filmPage__title {
+    font-size: 2rem;
+  }
+  .filmPage__content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .filmPage__poster {
+    display: flex;
+    justify-content: center;
+  }
+  .filmPage__detail {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .filmPage__label {
+    min-width: auto;
+    margin-right: 0;
+  }
+  .filmPage__intro {
+    margin-top: 1rem;
+  }
+  .filmPage__subtitle {
+    font-size: 1.2rem;
+  }
+  .filmPage__openingCrawl {
+    font-size: 1rem;
+  }
+}
+
+/* Задержки анимации для деталей */
+.filmPage__detail:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.filmPage__detail:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.filmPage__detail:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.filmPage__detail:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.filmPage__detail:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.filmPage__detail:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.filmPage__detail:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.filmPage__detail:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.filmPage__intro {
+  animation-delay: 0.9s;
+}

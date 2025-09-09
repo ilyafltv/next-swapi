@@ -5,6 +5,8 @@
 
   --color-light: #fff;
   --color-dark: #000;
+  --color-dark-soft: #1d1d1d;
+  --color-accent: #ffe81f;
 
   --container-width: 1032px;
   --container-padding-x: 16px;
@@ -24,8 +26,8 @@ body {
 }
 
 body {
-  color: color(--color-dark);
-  background: var(--color-light);
+  color: var(--color-light);
+  background: var(--color-dark-soft);
   font-family: var(--font-raleway);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -35,10 +37,17 @@ body {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
+  padding-block: 3rem;
 }
 
-.title {
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
   font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 a {

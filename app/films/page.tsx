@@ -1,7 +1,11 @@
-export default function Films() {
+import FilmsList from "@/components/films/FilmsList/FilmsList";
+
+export default async function Films() {
   return (
-    <div className="container">
-      <h1 className="title">Films</h1>
-    </div>
+    <section className="container films">
+      <h1>Фильмы</h1>
+
+      <FilmsList />
+    </section>
   );
 }
