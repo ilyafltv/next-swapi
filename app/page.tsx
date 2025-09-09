@@ -15,8 +15,8 @@ export default function Home() {
           <Button variant="primary" href="/films">
             Исследовать фильмы
           </Button>
-          <Button variant="secondary" href="/characters">
-            Смотреть Персонажей
+          <Button variant="secondary" href="https://github.com/ilyafltv">
+            Перейти к разработчику
           </Button>
         </div>
       </div>

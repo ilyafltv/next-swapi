@@ -1,3 +1,5 @@
+// В разработке
+
 export default function Characters() {
   return (
     <div className="container">

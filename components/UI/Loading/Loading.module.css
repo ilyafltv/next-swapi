@@ -1,0 +1,43 @@
+/* components/UI/Loading/Loading.module.css */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.spinner {
+  border: 3px solid var(--color-dark);
+  border-top: 3px solid var(--color-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading[data-size="small"] .spinner {
+  width: 20px;
+  height: 20px;
+}
+
+.loading[data-size="medium"] .spinner {
+  width: 40px;
+  height: 40px;
+}
+
+.loading[data-size="large"] .spinner {
+  width: 60px;
+  height: 60px;
+}
+
+.text {
+  margin-top: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -7,7 +7,7 @@ export default async function Navbar() {
     <nav className={styles.navbar}>
       <Link href={"/"}>Главная</Link>
       <Link href={"/films"}>Фильмы</Link>
-      <Link href={"/characters"}>Персонажи</Link>
+      {/* <Link href={"/characters"}>Персонажи</Link> */}
     </nav>
   );
 }
